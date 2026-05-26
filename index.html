@@ -1820,6 +1820,7 @@ function renderFeatured() {
 }
 
 function renderShop() {
+  products.sort(function(a,b){return a.name.localeCompare(b.name);});
   var grid = document.getElementById('shop-grid');
   var html = '';
   var count = 0;
