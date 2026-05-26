@@ -1746,6 +1746,9 @@ var products = [
   {id:13,name:"Semax",cat:"Neuro Research",cas:"80714-61-0",desc:"ACTH-derived heptapeptide investigated in BDNF modulation and cognitive neuroscience models.",sizes:[{label:"5mg",price:58},{label:"10mg",price:106},{label:"20mg",price:198}],formula:"C37H51N9O10S",mw:"813.93 g/mol",sequence:"Met-Glu-His-Phe-Pro-Gly-Pro",lot:"EB-SEX-2025-035",purity:"99.4%",testDate:"2025-03-07",method:"HPLC / MS",lab:"Analytical Bio Chemistry Labs"},
   {id:14,name:"Selank",cat:"Neuro Research",cas:"129954-34-3",desc:"Tuftsin-derived analog studied in anxiety-related neuropeptide pathways and GABAergic modulation.",sizes:[{label:"5mg",price:54},{label:"10mg",price:98},{label:"20mg",price:185}],formula:"C33H57N9O10",mw:"751.87 g/mol",sequence:"Thr-Lys-Pro-Arg-Pro-Gly-Pro",lot:"EB-SEL-2025-034",purity:"99.3%",testDate:"2025-03-06",method:"HPLC / MS",lab:"Analytical Bio Chemistry Labs"}
   ,{id:15,name:"GLP-3R",cat:"Metabolic Research",cas:"N/A",desc:"GLP-3 receptor-targeting peptide analog under investigation in metabolic signaling and glucose regulation research models.",sizes:[{label:"10mg",price:55},{label:"20mg",price:90},{label:"40mg",price:160}],formula:"N/A",mw:"N/A",sequence:"N/A",lot:"EB-G3R-2025-045",purity:"99.2%",testDate:"2025-03-20",method:"HPLC / MS",lab:"Intertek Pharmaceutical"}
+  ,{id:16,name:"Semaglutide",cat:"Metabolic Research",cas:"910463-68-2",desc:"GLP-1 receptor agonist analog studied in glucose metabolism and appetite regulation research models.",sizes:[{label:"2mg",price:45},{label:"5mg",price:85},{label:"10mg",price:155}],formula:"C187H291N45O59",mw:"4113.58 g/mol",sequence:"N/A",lot:"EB-SEM-2025-046",purity:"99.3%",testDate:"2025-03-21",method:"HPLC / MS",lab:"Intertek Pharmaceutical"}
+,{id:17,name:"Tirzepatide",cat:"Metabolic Research",cas:"2023788-19-2",desc:"Dual GLP-1/GIP receptor agonist peptide studied in metabolic regulation and insulin sensitivity research.",sizes:[{label:"2mg",price:55},{label:"5mg",price:95},{label:"10mg",price:175}],formula:"C225H348N48O68",mw:"4813.5 g/mol",sequence:"N/A",lot:"EB-TIR-2025-047",purity:"99.1%",testDate:"2025-03-22",method:"HPLC / MS",lab:"Intertek Pharmaceutical"}
+,{id:18,name:"NAD+",cat:"Metabolic Research",cas:"53-84-9",desc:"Nicotinamide adenine dinucleotide studied in mitochondrial function, cellular energy metabolism and longevity research.",sizes:[{label:"100mg",price:45},{label:"500mg",price:95},{label:"1000mg",price:175}],formula:"C21H27N7O14P2",mw:"663.43 g/mol",sequence:"N/A",lot:"EB-NAD-2025-048",purity:"99.5%",testDate:"2025-03-23",method:"HPLC / MS",lab:"Intertek Pharmaceutical"}
 ];
 
 var cart = [];
@@ -1801,8 +1804,8 @@ function cardHTML(p) {
       '<button class="pc-view-btn" onclick="window.openProduct(' + p.id + ')">View →</button>' +
       '<button class="pc-add-btn" onclick="window.quickAdd(' + p.id + ')">Add to Cart</button>' +
     '</div>' +
-    '<div class="pc-coa-badge">✓ COA Available</div>' +
-  '</div>';
+'<div class="pc-coa-badge">✓ COA Available</div>' +
+'<div style="position:absolute;top:12px;right:12px;background:#1a3a1a;border:1px solid #2d6a2d;color:#4caf50;font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:3px 8px;">● In Stock</div>''<div style="position:absolute;top:12px;right:12px;background:#1a3a1a;border:1px solid #2d6a2d;color:#4caf50;font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:3px 8px;">● In Stock</div>''<div style="position:absolute;top:12px;right:12px;background:#1a3a1a;border:1px solid #2d6a2d;color:#4caf50;font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:3px 8px;">● In Stock</div>'  '</div>';
 }
 
 function renderFeatured() {
