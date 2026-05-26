@@ -1808,7 +1808,8 @@ function cardHTML(p) {
       '<button class="pc-view-btn" onclick="window.openProduct(' + p.id + ')">View →</button>' +
       '<button class="pc-add-btn" onclick="window.quickAdd(' + p.id + ')">Add to Cart</button>' +
     '</div>' +
-    '<div class="pc-coa-badge">✓ COA Available</div>' +
+   '<div class="pc-coa-badge">✓ COA Available</div>' +
+(p.inStock ? '<div style="position:absolute;top:12px;right:12px;background:#1a3a1a;border:1px solid #2d6a2d;color:#4caf50;font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:3px 8px;">● In Stock</div>' : '<div style="position:absolute;top:12px;right:12px;background:#2a1a1a;border:1px solid #6a2d2d;color:#e05555;font-size:9px;font-weight:700;letter-spacing:0.12em;text-transform:uppercase;padding:3px 8px;">● Out of Stock</div>')
   '</div>';
 }
 
